@@ -5,43 +5,48 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+       <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+
+    <header class="page-header">
+        <nav class="nav-conteiner">
         <a href="./index.html" class="logo">Web<span class="logo-part">Studio</span></a>
   
-            <ul>
+            <ul class="page-nav">
                 <li><a href="./index.html" class="navigation">Studio</a></li>
                 <li><a href="" class="navigation">Portfolio</a></li>
                 <li><a href="" class="navigation">Contacts</a></li>
             </ul>
         </nav>
         <address class="contacts">
-            <ul>
+            <ul class="contacts-list">
                 <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
                 <li><a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
     </header>
+
     <main>
         <section class="main-page">
+           <div class="main-title">
             <h1 class="main-page-title">Effective Solutions for Your Business</h1>
-        <button class="main-page-button" type="button">Order Service</button></section>
+            </div>
+<div class="button">
+        <button class="main-page-button" type="button">Order Service</button>
+</div>
+    </section>
+
         <section class="main-page-descr">
             <h2 hidden>Features</h2>
-        <ul>
+            <div class="wrapper">
+        <ul class="main-list">
             <li>
                 <h3 class="main-page-thirdtitle">Strategy</h3>
                 <p class="main-page-text">
@@ -65,10 +70,11 @@
                     We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
+        </div>
         </section>
             <section class="ourteam">
                 <h2 class="ourteam-title">Our Team</h2>
-                <ul>
+                <ul class="ourteam-list">
                     <li class="team-box">
                         <img src="./images/mark.jpg" width="264" height="260" alt="Mark Guerrero-Product Designer" />
                     <h3 class="ourteam-header">Mark Guerrero</h3>
@@ -90,10 +96,11 @@
                     <p class="ourteam-text">UI Designer</p>
                 </li>
                 </ul>
+                
         </section>
         <section class="ourportfolio">
             <h2 class="ourportfolio-title">Our Portfolio</h2>
-            <ul>
+            <ul class="ourportfolio-list">
                 <li>
                     <img src="./images/banking.jpg" width="360" height="300" alt="Banking App" />
                     <h3 class="thirdtitle">Banking App</h3>
@@ -127,10 +134,13 @@
             </ul>
         </section>
      </main>
-    <footer class="bottom">
-        <a href="./index.html" class="bottom-logo">Web<span class="bottom-logo-part">Studio</span></a>
-        <p class="bottom-text">Increase the flow of customers and sales for your 
+    <footer class="footer">
+        <div class="footer-box">
+        <a href="./index.html" class="footer-logo">Web<span class="footer-logo-part">Studio</span></a>
+        <p class="footer-text">Increase the flow of customers and sales for your 
             business with digital marketing & growth solutions.</p>
+            </div>
     </footer>
+   
 </body>
 </html>
