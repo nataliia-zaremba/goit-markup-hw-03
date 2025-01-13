@@ -1,41 +1,51 @@
+* {margin: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Roboto", sans-serif;
     color:#434455;
     background-color:#FFFFFF;
     margin: 0;
 }
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+h1, 
+h2,
+h3,
+p { margin: 0;
 }
 
 a {
     text-decoration: none;
-    margin: 0;
+   
 }
-ul {
+ul,ol {
     list-style: none;
     margin: 0;
-   
+    padding-left: 0; 
+}
+img {
+    display: block;}
+.conteiner {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+
 }
 
 /*      ________________________Header_____________________          */
-
+.page-header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .page-header {
-display: flex;
-justify-content: space-between;
-padding-top: 24px;
-padding-left: 156px;
-padding-right: 156px;
-padding-bottom: 24px;
+border-bottom: 1px solid #e7e9fc;
+height: 72px;
 }
 
-.conteiner {
-    max-width: 1158px;
-}
 .nav-conteiner {
     display: flex;
+    align-items: center;
    }
 
 .logo {
@@ -48,6 +58,7 @@ padding-bottom: 24px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-right: 76px;
         
 }
 .logo-part {font-family: "Raleway", sans-serif;
@@ -62,6 +73,7 @@ padding-bottom: 24px;
     .page-nav {
         display: flex;
         gap: 40px;
+        align-items: center;
     }
         .navigation {
             font-weight: 500;
@@ -71,6 +83,7 @@ padding-bottom: 24px;
             line-height: 150%;
             letter-spacing: 0.02em;
             color: #2e2f42;
+            padding: 24px 0;
         }
         .navigation:hover,
         .navigation:focus {
@@ -81,14 +94,14 @@ padding-bottom: 24px;
             color: #404bbf;
             text-decoration: underline;
         } 
-                .contacts {
-                    font-style: normal;    
+                .contacts ul {
+                       display: flex;
+                    font-style: normal;
+                    letter-spacing: 0.02em;
+                    line-height: 1.5;
+                        gap: 40px;
                 }
-        .contacts-list {
-display: flex;
-    justify-content: flex-end;
-    gap: 40px;
-        }
+        
                 .contacts,
                 .contacts-link {
                     font-family: "Roboto", sans-serif;
@@ -110,10 +123,17 @@ display: flex;
                     color: #404bbf;
                 }
     /* __________________________       main       __________________________ */
+    .main-page .conteiner
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 .main-page {
     background: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+
 }
 .main-page-title {
         font-weight: 700;
@@ -124,16 +144,10 @@ display: flex;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-        padding-left: 472px;
-        padding-right: 472px;
+        max-width: 496px;
+        margin-bottom: 48px;
     
 }
- .button-conteiner {
-    display: flex;
-    justify-content: center;
-    margin-top: 48px;
- }
-
 .main-page-button {
         font-weight: 500;
         font-size: 16px;
@@ -157,22 +171,26 @@ display: flex;
 .main-page-button:focus {
     background: #404bbf;
 }
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
 .main-page-descr {
 
-padding-left: 156px;
-    padding-left: 156px;
-    padding-top: 144px;
-    padding-bottom: 201px;
+padding: 120px o;
+padding-top: 144px;
+padding-bottom: 201px;
 }
-
-
-.main-list {
-display: flex;
-gap: 24px;
-justify-content: center;
-
-}
-
 .main-page-thirdtitle {
         font-weight: 500;
         font-size: 20px;
@@ -181,6 +199,7 @@ justify-content: center;
         letter-spacing: 0.02em;
         color: #2e2f42;
 }
+
 .main-page-text
 {
     font-weight: 400;
@@ -190,6 +209,13 @@ justify-content: center;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
+}
+.main-list {
+    display: flex;
+    gap: 24px;
+}
+.list {
+    width: calc((100%-72px)/4);
 }
 .ourteam {
     background: #f4f4fd;
@@ -213,9 +239,10 @@ justify-content: center;
         text-transform: capitalize;
         color: #2e2f42;      
 }
-
 .team-box {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    width: calc(100%-72)/4;
 }
 .ourteam-header {
         font-weight: 500;
@@ -225,6 +252,11 @@ justify-content: center;
         line-height: 120%;
         letter-spacing: 0.02em;
         color: #2e2f42;
+}
+.team-box-footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
 }
 .ourteam-text {
         font-weight: 400;
@@ -238,7 +270,8 @@ justify-content: center;
 /*______________________________________OurPortfolio______________________________*/
 .ourportfolio {
     padding-bottom: 120px;
-    padding-top: 39px; 
+    padding-top: 120px; 
+    
 }
 .ourportfolio-title {
     font-weight: 700;
@@ -250,12 +283,18 @@ justify-content: center;
         text-align: center;
         text-transform: capitalize; 
         color: #2e2f42;
+        margin-bottom: 72px;
 }
 .ourportfolio-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;}
+    gap: 24px;
+row-gap: 48px;
+}
+.portfolio-list-item {
+    width: calc((100%-48px)/3);
+}
     
     
 .thirdtitle {
@@ -267,6 +306,7 @@ justify-content: center;
         line-height: 120%;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .ourportfolio-text {
    
@@ -283,16 +323,8 @@ justify-content: center;
         background: #2e2f42;
         padding-top: 100px;
         padding-bottom: 100px;
-        padding-left: 156px;
-        padding-right: 1020px;
 }
-.footer-box {
-    display: flex;
-    width: 264px;
-    flex-direction: column;
-    gap: 16px;
-    
-}
+
 .footer-text {
         font-weight: 400;
         font-size: 16px;
@@ -301,6 +333,7 @@ justify-content: center;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        max-width: 264px;
 }
 .footer-logo {
         font-weight: 700;
