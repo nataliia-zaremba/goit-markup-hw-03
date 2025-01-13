@@ -131,9 +131,9 @@ height: 72px;
     }
 .main-page {
     background: #2e2f42;
+    padding: 120px 0;
     padding-top: 188px;
     padding-bottom: 188px;
-    padding: 120px 0;
 
 }
 .main-page-title {
@@ -185,13 +185,9 @@ height: 72px;
     clip: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-
 }
 .main-page-descr {
-
 padding: 120px o;
-padding-top: 144px;
-padding-bottom: 201px;
 }
 .main-page-thirdtitle {
         font-weight: 500;
