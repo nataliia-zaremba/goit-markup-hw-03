@@ -133,6 +133,7 @@ height: 72px;
     background: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+    padding: 120px 0;
 
 }
 .main-page-title {
@@ -173,7 +174,7 @@ height: 72px;
     background: #404bbf;
 }
 
-.hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -199,6 +200,7 @@ padding-bottom: 201px;
         line-height: 120%;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .main-page-text
@@ -244,7 +246,7 @@ padding-bottom: 201px;
 .team-box {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    width: calc(100%-72px)/4;
+    width: calc((100%-72px))/4;
 }
 .ourteam-header {
         font-weight: 500;
@@ -301,6 +303,7 @@ row-gap: 48px;
   .portfolio-content {
      padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
     
 .thirdtitle { 
